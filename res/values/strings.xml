@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">KitKat</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat posuere nisi. Proin et auctor urna. Morbi vel massa in nulla pulvinar mattis vestibulum eu est. Suspendisse porta dignissim tempus. Quisque in lorem sit amet diam bibendum pulvinar in a leo. Integer magna elit, rutrum et eros a, fringilla pellentesque leo. In non purus eleifend, elementum felis nec, consectetur ipsum. Morbi vitae arcu metus. Aliquam consectetur scelerisque nunc eu blandit. Praesent consectetur vitae purus a bibendum.
+
+Maecenas laoreet arcu non augue varius, in varius quam bibendum. Etiam eget arcu quis erat ultricies dictum vitae eu mi. Nam malesuada placerat nisl eu facilisis. Ut purus ante, vulputate consectetur fermentum id, congue porttitor neque. Duis gravida magna in nunc consectetur volutpat. Pellentesque eu hendrerit nunc. Phasellus id lobortis metus. Duis erat elit, mattis a ligula id, laoreet mollis metus. Vestibulum scelerisque metus ac aliquet auctor.
+
+Sed venenatis metus ante, vel tincidunt ligula consectetur non. In hac habitasse platea dictumst. Pellentesque lacus leo, sodales eget nunc vitae, luctus suscipit lacus. Nullam eros neque, feugiat non erat vel, congue tincidunt lorem. Integer eget auctor nisi, vel luctus dui. Cras in lorem sed velit convallis viverra vel vel turpis. Praesent ac bibendum metus, ac ornare ligula. Suspendisse libero odio, porta eu accumsan ac, sagittis et metus. Morbi hendrerit pulvinar mauris. Curabitur non cursus massa. Aliquam hendrerit pulvinar nisl, sed fermentum metus suscipit id.
+
+Praesent volutpat turpis sed velit sollicitudin, eget pulvinar nibh accumsan. Morbi faucibus, leo sit amet suscipit luctus, leo augue eleifend dui, eget rhoncus mauris urna nec velit. Nam ornare facilisis aliquet. Sed volutpat enim lorem, sit amet laoreet turpis ullamcorper ut. Ut vestibulum metus eu lectus mollis commodo. Mauris pharetra tempus arcu. Nulla at leo adipiscing, condimentum lorem vitae, sodales nibh. Nulla ornare pellentesque nisl, et ultrices eros rhoncus at. Etiam elit velit, condimentum suscipit placerat a, hendrerit sed erat. Curabitur bibendum accumsan magna at vehicula.
+
+Cras vulputate lectus lorem, sit amet scelerisque arcu placerat ut. Curabitur semper nisl et accumsan interdum. Sed sodales, tellus quis pellentesque vulputate, lacus urna volutpat magna, quis gravida lacus arcu ut turpis. In eu pellentesque enim. Morbi rutrum eros quis aliquet interdum. Phasellus blandit arcu ut nulla ultrices, a posuere erat malesuada. Integer consectetur leo ante, vitae condimentum eros adipiscing ac. Fusce mattis luctus felis vel dignissim. Ut auctor iaculis porttitor. Interdum et malesuada fames ac ante ipsum primis in faucibus.</string>
+
+</resources>
