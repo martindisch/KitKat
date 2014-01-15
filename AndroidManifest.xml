@@ -15,7 +15,8 @@
         android:theme="@android:style/Theme.Holo.Light.NoActionBar.TranslucentDecor" >
         <activity
             android:name="com.martin.kitkat.MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:configChanges="orientation|screenSize" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

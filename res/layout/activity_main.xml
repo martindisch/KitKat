@@ -15,6 +15,27 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/lorem" />
+
+        <RelativeLayout
+            android:id="@+id/container"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvLorem"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/bChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/container"
+            android:layout_centerHorizontal="true"
+            android:text="Change Scene"
+            android:layout_marginBottom="30dp" />
     </RelativeLayout>
 
 </ScrollView>

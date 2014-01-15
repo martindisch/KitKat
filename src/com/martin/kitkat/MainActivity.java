@@ -3,23 +3,59 @@ package com.martin.kitkat;
 import android.app.Activity;
 import android.os.Build;
 import android.os.Bundle;
+import android.transition.Scene;
+import android.transition.TransitionManager;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
-	private TextView tvLorem;
+	private TextView tvLorem, tvA, tvB;
+	private ViewGroup container;
+	private Button changeScene;
+	private Scene current;
+	private Scene other;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
+		container = (ViewGroup) findViewById(R.id.container);
+
+		current = Scene.getSceneForLayout(container, R.layout.text01, this);
+		other = Scene.getSceneForLayout(container, R.layout.text02, this);
+
+		current.enter();
+
+		changeScene = (Button) findViewById(R.id.bChange);
+		changeScene.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				Scene tmp = other;
+				other = current;
+				current = tmp;
+
+				TransitionManager.go(current);
+				tvA = (TextView) current.getSceneRoot().findViewById(R.id.textA);
+				tvB = (TextView) current.getSceneRoot().findViewById(R.id.textB);
+				
+				tvA.setTypeface(Typefaces.get(getApplicationContext(), "fonts/Rufina-Regular.ttf"));
+				tvB.setTypeface(Typefaces.get(getApplicationContext(), "fonts/Rufina-Regular.ttf"));
+			}
+		});
+		tvA = (TextView) container.findViewById(R.id.textA);
+		tvB = (TextView) container.findViewById(R.id.textB);
 		tvLorem = (TextView) findViewById(R.id.tvLorem);
 		tvLorem.setTypeface(Typefaces.get(this, "fonts/Rufina-Regular.ttf"));
+		tvA.setTypeface(Typefaces.get(this, "fonts/Rufina-Regular.ttf"));
+		tvB.setTypeface(Typefaces.get(this, "fonts/Rufina-Regular.ttf"));
 		tvLorem.setOnClickListener(new OnClickListener() {
-			
+
 			@Override
 			public void onClick(View v) {
 				toggleHideyBar();
